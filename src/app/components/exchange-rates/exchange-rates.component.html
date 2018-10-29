@@ -1,0 +1,18 @@
+<div>
+  <table>
+    <tr>
+      <th>
+        <a href="#" class="sort-by" (click)="onCurrencyClick()">
+          Currency
+        </a>
+      </th>
+      <th>Buy</th>
+      <th>Sell</th>
+    </tr>
+    <tr *ngFor="let currency of sortedCurrencies" [ngClass]="{'highlight': rates.get(currency).highlight}">
+      <td>{{currency}}</td>
+      <td>{{rates.get(currency).buy}}</td>
+      <td>{{rates.get(currency).sell}}</td>
+    </tr>
+  </table>
+</div>

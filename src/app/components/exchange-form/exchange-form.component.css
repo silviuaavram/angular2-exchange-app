@@ -1,0 +1,17 @@
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+input {
+  width: 120px;
+}
+
+button, select {
+  width: 125px;
+}
+
+button {
+  align-self: flex-end;
+}

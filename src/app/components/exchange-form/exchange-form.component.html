@@ -1,0 +1,20 @@
+<div>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Base:</label>
+      <select name="currency" [(ngModel)]="currency">
+        <option *ngFor="let currency of currencies" value={{currency}}>
+          {{currency}}
+        </option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Date:</label>
+      <input name="date" type="date" [(ngModel)]="date">
+    </div>
+    <div class="form-group">
+      <label></label>
+      <button type="submit">Display</button>
+    </div>
+  </form>
+</div>
